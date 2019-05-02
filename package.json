@@ -1,0 +1,12 @@
+{
+  "name": "grindr_name_generator",
+  "version": "1.0.0",
+  "description": "Create your own Grindr username!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --coverage --forceExit"
+  },
+  "author": "Francesco Imola",
+  "license": "ISC"
+}
