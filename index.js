@@ -13760,6 +13760,14 @@ const json = [{
    }
 ]
 
+if (jQuery) {  
+   console.log('jQuery is loaded'); 
+   return true
+} else {
+   console.log('jQuery is not loaded');
+   return false
+}
+
 let jsonobj = JSON.stringify(json)
 let emoji = JSON.parse(jsonobj)
 
@@ -13773,10 +13781,13 @@ const Objects = emoji.slice(1002, 1235)
 const Symbols = emoji.slice(1235, 1452)
 const Flags = emoji.slice(1452, 1720)
 
-// const random = new Random(); // uses the nativeMath engine
-// const value = random.integer(1, 100);
+var arrayLenght = Object.keys(Flags).length
 
-var test = Flags[5].char
+const random = new Random();
+const value = random.integer(1, arrayLenght);
 
-console.log(test)
-// document.getElementById("scriptOutput").innerHTML = Objects;
+var test = Flags[value].char
+
+// console.log(arrayLenght)
+
+document.getElementById("scriptOutput").innerHTML = test;
