@@ -6,6 +6,7 @@
 
 #scriptOutput {
    font-family: "Times New Roman", Times, serif;
+   color: black;
    font-size: 10vmax;
    font-size: 15vw;
    font-weight: bold;
@@ -18,4 +19,13 @@
    grid-row-end: span 4;
    align-self: start;
    justify-self: start;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+a:hover {
+   color: red;
 }
