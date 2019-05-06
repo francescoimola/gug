@@ -3,6 +3,8 @@ let emoji = []
 emoji = JSON.parse(JSON.stringify(EmojiListJson))
 const emojiLenght = Object.keys(emoji).length
 
+var emojiConv = new EmojiConvertor();
+
 let nicknames = ["lad", "bloke", "man", "guy", "boy", "hung", "slut", "bitch", "whore", "angel", "brit", "slave", "daddy", "asian", "american", "bubble", "Honey", "otter", "dad", "twink", "bear", "hun", "chub", "jock", "chaser", "qween", "queen", "chef", "HUNGG"]
 let adj = ["fuzzy", "hairy", "discret", "dirty", "clean", "adventurous", "caring", "shaven", "smooth", "thicc", "thick", "slim", "sugar", "filthy", "bored", "horny", "flexible", "skinny", "XL", "XXL", "little", "long", "jckd", "tall", "married", "sexy", "sex"]
 let time = ["TODAY", "TONIGHT", "THIS EVENING", "Meet later", "Right now", "now"]
@@ -50,7 +52,7 @@ function myFunction(a) {
 
 //Create matrix array
 let myArray = []
-myArray[0] = myFunction(emoji)
+myArray[0] = emojiConv.replace_unified(myFunction(emoji));
 myArray[1] = myFunction(accom)
 myArray[3] = myFunction(nicknames)
 myArray[4] = myFunction(adj)
