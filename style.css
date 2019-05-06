@@ -1,7 +1,21 @@
+.container {
+   display: inline-grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 #scriptOutput {
    font-family: "Times New Roman", Times, serif;
-   font-size: 8em;
+   font-size: 17vmax;
+   font-size: 20vw;
    font-weight: bold;
-   margin-top: 100px;
-   margin-left: 100px;
+}
+
+.item {
+   grid-column-start: 1;
+   grid-column-end: span 2;
+   grid-row-start: 1;
+   grid-row-end: span 4;
+   align-self: start;
+   justify-self: start;
 }

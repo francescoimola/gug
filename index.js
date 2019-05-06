@@ -3,15 +3,15 @@ let emoji = []
 emoji = JSON.parse(JSON.stringify(EmojiListJson))
 const emojiLenght = Object.keys(emoji).length
 
-let nicknames = ["lad", "bloke", "man", "guy", "boy", "hung", "slut", "bitch", "whore", "angel", "brit", "slave", "daddy", "asian", "american", "bubble", "Honey", "otter", "dad", "twink", "bear", "hun", "chub", "jock", "chaser", "qween", "queen"]
+let nicknames = ["lad", "bloke", "man", "guy", "boy", "hung", "slut", "bitch", "whore", "angel", "brit", "slave", "daddy", "asian", "american", "bubble", "Honey", "otter", "dad", "twink", "bear", "hun", "chub", "jock", "chaser", "qween", "queen", "chef"]
 let adj = ["fuzzy", "hairy", "discret", "dirty", "clean", "adventurous", "caring", "shaven", "smooth", "thicc", "thick", "slim", "sugar", "filthy", "bored", "horny", "flexible", "skinny"]
 let time = ["TODAY", "TONIGHT", "THIS EVENING", "Meet later", "Right now"]
 let topBottom = ["top", "tp", "4top", "bottom", "bttm", "4bttm"]
 let hey = ["hey", "heya", "hello", "hi", "Yas"]
 let initials = ["G", "F", "T", "M", "H"]
 let locations = ["new to the area", "local"]
-let accom = ["can accom", "can accomodate", "cant accom", "cant accomodate", "ACCOM", "NO ACCOM"]
-let preMade = ["mouth 4 use", "HnH", "Head", "BDSM", "Maso", "Use me", "Masc", "masc4masc", "Femme", "Femm", "Pop me", "Huge", "Anyone", "Hi hun", "Honey", "Guy next door", "Boy next door"]
+let accom = ["can accom", "can accomodate", "cant accom", "cant accomodate", "ACCOM", "NO ACCOM", "host"]
+let preMade = ["mouth 4 use", "HnH", "Head", "BDSM", "Maso", "Use me", "Masc", "masc4masc", "Femme", "Femm", "Pop me", "Huge", "Anyone", "Hi hun", "Honey", "Guy next door", "Boy next door", "looking to fuck", "looking to suck"]
 let signs = ["!", "?"]
 
 function myFunction(a) {
@@ -64,11 +64,11 @@ myArray[11] = myFunction(signs)
 
 //Remove undefined values
 function removeEmpty(obj) {
-      Object.keys(obj).forEach(function (key) {
-         (obj[key] && typeof obj[key] === 'object') && removeEmpty(obj[key]) ||
-            (obj[key] === undefined || obj[key] === null) && delete obj[key]
-      });
-      return obj;
+   Object.keys(obj).forEach(function (key) {
+      (obj[key] && typeof obj[key] === 'object') && removeEmpty(obj[key]) ||
+         (obj[key] === undefined || obj[key] === null) && delete obj[key]
+   });
+   return obj;
 }
 
 function checkArray(a) {
@@ -77,18 +77,17 @@ function checkArray(a) {
       if (a[i] == undefined) {
          removeEmpty(a[i])
       }
-   } 
+   }
 }
-
-checkArray(myArray)
 
 var printThis = "Hello World"
 
 //Logic
 function hello(a) {
+   checkArray(a)
    var random_boolean = Math.random() >= 0.5;
-   var val1 = a[Math.floor(Math.random() * Math.floor(a.length))]
-   var val2 = a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[Math.floor(Math.random() * Math.floor(a.length))]
+   var val1 = a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[0]
+   var val2 = a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[0]
    if (random_boolean && val1 !== undefined) {
       checkArray(val1)
       return printThis = val1
@@ -103,6 +102,8 @@ console.log(hello(myArray))
 //Display output on page
 
 if (hello) {
-   var msg = printThis.replace(/undefined/g, "");
-   document.getElementById("scriptOutput").innerHTML = msg
+   document.getElementById("scriptOutput").innerHTML = printThis.replace(/undefined/g, "hey");
+   setTimeout(function () {
+      window.location.reload(1);
+   }, 2010);
 }
