@@ -3,15 +3,15 @@ let emoji = []
 emoji = JSON.parse(JSON.stringify(EmojiListJson))
 const emojiLenght = Object.keys(emoji).length
 
-let nicknames = ["lad", "bloke", "man", "guy", "boy", "hung", "slut", "bitch", "whore", "angel", "brit", "slave", "daddy", "asian", "american", "bubble", "Honey", "otter", "dad", "twink", "bear", "hun", "chub", "jock", "chaser", "qween", "queen", "chef"]
-let adj = ["fuzzy", "hairy", "discret", "dirty", "clean", "adventurous", "caring", "shaven", "smooth", "thicc", "thick", "slim", "sugar", "filthy", "bored", "horny", "flexible", "skinny"]
-let time = ["TODAY", "TONIGHT", "THIS EVENING", "Meet later", "Right now"]
+let nicknames = ["lad", "bloke", "man", "guy", "boy", "hung", "slut", "bitch", "whore", "angel", "brit", "slave", "daddy", "asian", "american", "bubble", "Honey", "otter", "dad", "twink", "bear", "hun", "chub", "jock", "chaser", "qween", "queen", "chef", "HUNGG"]
+let adj = ["fuzzy", "hairy", "discret", "dirty", "clean", "adventurous", "caring", "shaven", "smooth", "thicc", "thick", "slim", "sugar", "filthy", "bored", "horny", "flexible", "skinny", "XL", "XXL", "little", "long", "jckd", "tall", "married", "sexy", "sex"]
+let time = ["TODAY", "TONIGHT", "THIS EVENING", "Meet later", "Right now", "now"]
 let topBottom = ["top", "tp", "4top", "bottom", "bttm", "4bttm"]
 let hey = ["hey", "heya", "hello", "hi", "Yas"]
 let initials = ["G", "F", "T", "M", "H"]
 let locations = ["new to the area", "local"]
 let accom = ["can accom", "can accomodate", "cant accom", "cant accomodate", "ACCOM", "NO ACCOM", "host"]
-let preMade = ["mouth 4 use", "HnH", "Head", "BDSM", "Maso", "Use me", "Masc", "masc4masc", "Femme", "Femm", "Pop me", "Huge", "Anyone", "Hi hun", "Honey", "Guy next door", "Boy next door", "looking to fuck", "looking to suck"]
+let preMade = ["mouth 4 use", "HnH", "Head", "BDSM", "Maso", "Use me", "Masc", "masc4masc", "Femme", "Femm", "Pop me", "Huge", "Anyone", "Hi hun", "Honey", "Guy next door", "Boy next door", "looking to fuck", "looking to suck", "owned", "back rub", "cuddle", "cuddles", "fun", "looking", "2 suk u", "suk me", "unexpected", "marry", "sex me"]
 let signs = ["!", "?"]
 
 function myFunction(a) {
