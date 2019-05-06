@@ -7,16 +7,16 @@
 #scriptOutput {
    font-family: "Times New Roman", Times, serif;
    color: black;
-   font-size: 20vmax;
-   font-size: 20vw;
+   font-size: 10vmax;
+   font-size: 15vw;
    font-weight: bold;
 }
 
 .item {
    grid-column-start: 1;
-   grid-column-end: span 2;
+   grid-column-end: 2;
    grid-row-start: 1;
-   grid-row-end: span 4;
+   grid-row-end: span 5;
    align-self: start;
    justify-self: start;
 }
