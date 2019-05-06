@@ -90,10 +90,10 @@ function hello(a) {
    var val2 = a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[0]
    if (random_boolean && val1 !== undefined) {
       checkArray(val1)
-      return printThis = val1
+      return printThis = val1.replace(/undefined/g, "hey")
    } else if (random_boolean !== true && val2 !== undefined) {
       checkArray(val2)
-      return printThis = val2
+      return printThis = val2.replace(/undefined/g, "hello")
    }
 }
 
@@ -102,7 +102,7 @@ console.log(hello(myArray))
 //Display output on page
 
 if (hello) {
-   document.getElementById("scriptOutput").innerHTML = printThis.replace(/undefined/g, "hey");
+   document.getElementById("scriptOutput").innerHTML = printThis;
    setTimeout(function () {
       window.location.reload(1);
    }, 2010);
