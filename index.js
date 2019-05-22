@@ -53,14 +53,14 @@ function myFunction(a) {
 let myArray = []
 myArray[0] = emojiConv.replace_unified(myFunction(emoji));
 myArray[1] = myFunction(accom)
-myArray[3] = myFunction(nicknames)
-myArray[4] = myFunction(adj)
-myArray[5] = myFunction(time)
-myArray[6] = myFunction(topBottom)
-myArray[7] = myFunction(hey)
-myArray[8] = myFunction(signs)
-myArray[9] = myFunction(locations)
-myArray[10] = myFunction(preMade)
+myArray[2] = myFunction(nicknames)
+myArray[3] = myFunction(adj)
+myArray[4] = myFunction(time)
+myArray[5] = myFunction(topBottom)
+myArray[6] = myFunction(hey)
+myArray[7] = myFunction(signs)
+myArray[8] = myFunction(locations)
+myArray[9] = myFunction(preMade)
 
 //Remove undefined values
 function removeEmpty(obj) {
@@ -80,12 +80,12 @@ function checkArray(a) {
    }
 }
 
-var printThis = "Hello World"
+var printThis = ""
 
 //Logic
 function hello(a) {
    checkArray(a)
-   var random_boolean = Math.random() >= 0.5;
+   var random_boolean = Math.random() > 0.5;
    var val1 = a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[0]
    var val2 = a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[Math.floor(Math.random() * Math.floor(a.length))] + " " + a[0]
    if (random_boolean && val1 !== undefined) {
@@ -94,10 +94,12 @@ function hello(a) {
    } else if (random_boolean !== true && val2 !== undefined) {
       checkArray(val2)
       return printThis = val2.replace(/undefined/g, "hello")
+   } else {
+      hello(a)
    }
 }
 
-console.log(hello(myArray))
+hello(myArray)
 
 //Display output on page
 
