@@ -5,16 +5,15 @@ const emojiLenght = Object.keys(emoji).length
 
 var emojiConv = new EmojiConvertor();
 
-let nicknames = ["lad", "bloke", "man", "guy", "boy", "hung", "slut", "bitch", "whore", "angel", "brit", "slave", "daddy", "asian", "american", "bubble", "Honey", "otter", "dad", "twink", "bear", "hun", "chub", "jock", "chaser", "qween", "queen", "chef", "HUNGG"]
+let nicknames = ["lad", "bloke", "man", "guy", "boy", "hung", "slut", "bitch", "whore", "angel", "brit", "slave", "daddy", "asian", "american", "bubble", "Honey", "otter", "dad", "twink", "bear", "hun", "chub", "jock", "chaser", "qween", "queen", "chef", "HUNGG", "babby", "babes", "artist", "mediterranean food"]
 let adj = ["fuzzy", "hairy", "discret", "dirty", "clean", "adventurous", "caring", "shaven", "smooth", "thicc", "thick", "slim", "sugar", "filthy", "bored", "horny", "flexible", "skinny", "XL", "XXL", "little", "long", "jckd", "tall", "married", "sexy", "sex"]
-let time = ["TODAY", "TONIGHT", "THIS EVENING", "Meet later", "Right now", "now"]
+let time = ["Today", "Tonight", "This eve", "This evening", "Meet later", "Right now", "now", "anytime", "best be quick", "When are we gonna see each other?"]
 let topBottom = ["top", "tp", "4top", "bottom", "bttm", "4bttm"]
-let hey = ["hey", "heya", "hello", "hi", "Yas"]
-let initials = ["G", "F", "T", "M", "H"]
-let locations = ["new to the area", "local"]
-let accom = ["can accom", "can accomodate", "cant accom", "cant accomodate", "ACCOM", "NO ACCOM", "host"]
-let preMade = ["mouth 4 use", "HnH", "Head", "BDSM", "Maso", "Use me", "Masc", "masc4masc", "Femme", "Femm", "Pop me", "Huge", "Anyone", "Hi hun", "Honey", "Guy next door", "Boy next door", "looking to fuck", "looking to suck", "owned", "back rub", "cuddle", "cuddles", "fun", "looking", "2 suk u", "suk me", "unexpected", "marry", "sex me"]
-let signs = ["!", "?"]
+let hey = ["hey", "heya", "hello", "hi", "Yas", "hon", "hun", "hunny", "YESS", "yes", "yass"]
+let locations = ["new to the area", "local", "right here", "just round the corner", "up the road", "down the high street"]
+let accom = ["can accom", "can accomodate", "can't accom", "can't accomodate", "ACCOM", "NO ACCOM", "host", "at mine", "@ mine", "at yours", "@ yours", "no guests", "b my guest", "be my guest"]
+let preMade = ["mouth 4 use", "HnH", "Head", "BDSM", "Maso", "Use me", "Masc", "masc4masc", "Femme", "Femm", "Pop me", "Huge", "Anyone", "Hi hun", "Honey", "Guy next door", "Boy next door", "looking to fuck", "looking to suck", "owned", "back rub", "cuddle", "cuddles", "fun", "looking", "2 suk u", "suk me", "unexpected", "marry", "sex me", "get me outta here", "add me", "take off your masc", "INTO you"]
+let signs = ["!", "?", "!?", ">>", "()!()", "$", "$$", "@"]
 
 function myFunction(a) {
 
@@ -59,10 +58,9 @@ myArray[4] = myFunction(adj)
 myArray[5] = myFunction(time)
 myArray[6] = myFunction(topBottom)
 myArray[7] = myFunction(hey)
-myArray[8] = myFunction(initials)
+myArray[8] = myFunction(signs)
 myArray[9] = myFunction(locations)
 myArray[10] = myFunction(preMade)
-myArray[11] = myFunction(signs)
 
 //Remove undefined values
 function removeEmpty(obj) {
